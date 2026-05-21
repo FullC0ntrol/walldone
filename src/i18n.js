@@ -1,0 +1,346 @@
+export const languages = [
+  { code: 'pl', label: 'Polski', flag: '🇵🇱' },
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'nl', label: 'Vlaams', flag: '🇧🇪' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' },
+];
+
+export const translations = {
+  // ─── NAVBAR ───
+  nav_about: { pl: 'O nas', en: 'About us', nl: 'Over ons', de: 'Über uns', fr: 'À propos' },
+  nav_services: { pl: 'Specjalność', en: 'Specialty', nl: 'Onze Specialiteit', de: 'Spezialität', fr: 'Spécialité' },
+  nav_process: { pl: 'Proces', en: 'Process', nl: 'Werkwijze', de: 'Ablauf', fr: 'Processus' },
+  nav_portfolio: { pl: 'Portfolio', en: 'Portfolio', nl: 'Portfolio', de: 'Portfolio', fr: 'Portfolio' },
+  nav_contact: { pl: 'Kontakt', en: 'Contact', nl: 'Contact', de: 'Kontakt', fr: 'Contact' },
+  nav_quote: { pl: 'Zadzwoń', en: 'Call us', nl: 'Bellen', de: 'Anrufen', fr: 'Appeler' },
+  nav_subtitle: {
+    pl: 'Betrouwbaar & Ervaren | Belgia',
+    en: 'Betrouwbaar & Ervaren | Belgium',
+    nl: 'Betrouwbaar & Ervaren | België',
+    de: 'Betrouwbaar & Ervaren | Belgien',
+    fr: 'Betrouwbaar & Ervaren | Belgique'
+  },
+
+  // ─── HERO ───
+  hero_title_1: { pl: 'Wall', en: 'Wall', nl: 'Wall', de: 'Wall', fr: 'Wall' },
+  hero_title_2: { pl: 'Done', en: 'Done', nl: 'Done', de: 'Done', fr: 'Done' },
+  hero_subtitle: {
+    pl: 'Profesjonalne malowanie i wykończenia wnętrz w Leuven i okolicach.',
+    en: 'Professional painting and interior finishing in Leuven and surroundings.',
+    nl: 'Professionele schilderwerken en binnenafwerking in Leuven en omgeving.',
+    de: 'Professionelle Malerarbeiten und Innenausbau in Leuven und Umgebung.',
+    fr: 'Travaux de peinture professionnels et finitions intérieures à Louvain et environs.',
+  },
+  hero_services_line: {
+    pl: 'Malowanie · Panele Podłogowe · Gładzie · Zabudowy G-K',
+    en: 'Painting · Flooring · Plastering · Drywall',
+    nl: 'Schilderwerk · Laminaat & Parket · Pleisterwerk · Gyproc',
+    de: 'Malerarbeiten · Bodenbeläge · Putzarbeiten · Trockenbau',
+    fr: 'Peinture · Revêtement de sol · Plâtrerie · Cloisons sèches',
+  },
+  hero_cta: { pl: 'Darmowa Wycena', en: 'Free Quote', nl: 'Gratis Offerte', de: 'Kostenloses Angebot', fr: 'Devis Gratuit' },
+  hero_projects: { pl: 'Nasze Portfolio', en: 'Our Portfolio', nl: 'Ons Portfolio', de: 'Unser Portfolio', fr: 'Notre Portfolio' },
+  scroll: { pl: 'Przewiń', en: 'Scroll', nl: 'Scroll', de: 'Scrollen', fr: 'Défiler' },
+
+  // ─── STATS ───
+  stat_satisfaction: { pl: 'Satysfakcji Gwarantowanej', en: 'Satisfaction Guaranteed', nl: 'Klantentevredenheid', de: 'Zufriedenheitsgarantie', fr: 'Satisfaction Garantie' },
+  stat_team: { pl: 'Profesjonalna Ekipa', en: 'Professional Crew', nl: 'Professionele Zelfwerkende Patroon', de: 'Professionelle Crew', fr: 'Équipe Professionnelle' },
+  stat_services: { pl: 'Usług Wykończeniowych', en: 'Premium Services', nl: 'Premium Diensten', de: 'Premium-Leistungen', fr: 'Services Premium' },
+  stat_quote_price: { pl: 'Bezpłatna Wycena', en: 'Free Detailed Quote', nl: 'Gratis Offerte', de: 'Gratis Angebot', fr: 'Devis Gratuit' },
+
+  // ─── PROCESS ───
+  process_tag: { pl: 'Nasz Proces', en: 'Our Process', nl: 'Werkwijze', de: 'Arbeitsablauf', fr: 'Notre Processus' },
+  process_title: { pl: 'Jak pracujemy?', en: 'How We Work', nl: 'Hoe we te werk gaan', de: 'Wie wir arbeiten', fr: 'Comment nous travaillons' },
+  process_desc: {
+    pl: 'Przejrzysty proces od pierwszego kontaktu do perfekcyjnego odbioru Twojego nowego wnętrza.',
+    en: 'A transparent process from the initial contact to a perfect handover of your new interior.',
+    nl: 'Een transparant proces van het eerste contact tot de perfecte oplevering van uw nieuwe interieur.',
+    de: 'Ein transparenter Ablauf vom Erstkontakt bis zur perfekten Übergabe Ihres neuen Innenraums.',
+    fr: 'Un processus transparent du premier contact à la réception parfaite de votre nouvel intérieur.',
+  },
+  step: { pl: 'Krok', en: 'Step', nl: 'Stap', de: 'Schritt', fr: 'Étape' },
+  step1_title: { pl: 'Konsultacja i Kosztorys', en: 'Consultation & Quote', nl: 'Consult & Offerte', de: 'Beratung & Angebot', fr: 'Consultation & Devis' },
+  step1_desc: {
+    pl: 'Rozmawiamy o Twoich potrzebach, doradzamy w wyborze rozwiązań i przygotowujemy bezpłatną, szczegółową wycenę bez zobowiązań.',
+    en: 'We discuss your needs, advise on materials and prepare a free, detailed, no-obligation cost estimate.',
+    nl: 'We bespreken uw wensen, adviseren over materialen en maken een gratis, gedetailleerde en vrijblijvende offerte.',
+    de: 'Wir besprechen Ihre Wünsche, beraten bei der Materialauswahl und erstellen einen kostenlosen, detaillierten Kostenvoranschlag.',
+    fr: 'Nous discutons de vos besoins, vous conseillons sur le choix des solutions et préparons un devis gratuit et détaillé.',
+  },
+  step2_title: { pl: 'Perfekcyjne Zabezpieczenie', en: 'Surface Protection', nl: 'Afdekken & Zabezpieczenie', de: 'Perfekter Schutz', fr: 'Protection des Surfaces' },
+  step2_desc: {
+    pl: 'Dokładnie oklejamy okna, drzwi i podłogi. Zabezpieczamy meble i gruntujemy podłoże. Twój dom jest u nas w 100% bezpieczny.',
+    en: 'We carefully mask windows, doors and floors. We protect furniture and prime surfaces. Your home is 100% safe with us.',
+    nl: 'We plakken ramen, deuren en vloeren zorgvuldig af. We beschermen meubels en primen oppervlakken. Uw huis is 100% veilig bij ons.',
+    de: 'Wir kleben Fenster, Türen und Böden sorgfältig ab. Wir schützen Möbel und grundieren Flächen. Ihr Zuhause ist bei uns absolut sicher.',
+    fr: 'Nous masquons soigneusement les fenêtres, les portes et les sols. Nous protégeons les meubles et appliquons la sous-couche.',
+  },
+  step3_title: { pl: 'Precyzyjna Realizacja', en: 'Precision Execution', nl: 'Nauwkeurige Uitvoering', de: 'Präzise Realisierung', fr: 'Exécution de Précision' },
+  step3_desc: {
+    pl: 'Przystępujemy do malowania, szpachlowania lub układania podłóg z dbałością o każdy milimetr, zachowując ostre odcięcia i równe płaszczyzny.',
+    en: 'We paint, plaster or lay floors with millimeter precision, keeping perfectly sharp lines and smooth flat surfaces.',
+    nl: 'We schilderen, plamuren of leggen vloeren met millimeterprecisie, voor strakke lijnen en perfect vlakke oppervlakken.',
+    de: 'Wir streichen, spachteln oder verlegen Böden mit Millimeterpräzision, für messerscharfe Kanten und ebene Flächen.',
+    fr: 'Nous peignons, enduisons ou posons les sols avec une précision au millimètre près, en garantissant des tracés nets.',
+  },
+  step4_title: { pl: 'Odbiór i Porządek', en: 'Handover & Cleanliness', nl: 'Oplevering & Netheid', de: 'Übergabe & Sauberkeit', fr: 'Réception & Propreté' },
+  step4_desc: {
+    pl: 'Sprzątamy całe miejsce pracy, usuwamy taśmy i folie, a następnie wspólnie odbieramy gotowe wnętrze. Pozostawiamy idealny porządek.',
+    en: 'We clean up the entire workspace, remove all tapes and foils, and hand over a spotless, perfect room to you.',
+    nl: 'We maken de hele werkplek schoon, verwijderen alle tape en folie, en leveren een smetteloze, perfecte ruimte aan u op.',
+    de: 'Wir reinigen den gesamten Arbeitsbereich, entfernen Folien und Klebebänder und übergeben Ihnen einen makellosen Raum.',
+    fr: 'Nous nettoyons l’intégralité du chantier, retirons les protections et réceptionnons ensemble les travaux.',
+  },
+
+  // ─── SERVICES (SPECJALNOŚĆ) ───
+  services_tag: { pl: 'Nasza Specjalność', en: 'Our Specialty', nl: 'Onze Specialiteit', de: 'Unsere Spezialität', fr: 'Notre Spécialité' },
+  services_sec_title: { pl: 'Kluczowe Obszary Działania', en: 'Core Specialty Areas', nl: 'Onze Kernspecialiteiten', de: 'Unsere Kernbereiche', fr: 'Nos Domaines d\'Activité' },
+  services_title: { pl: 'Malowanie', en: 'Painting', nl: 'Schilderwerk', de: 'Malerarbeiten', fr: 'Peinture' },
+  services_desc: {
+    pl: 'Precyzja na każdym etapie — od zabezpieczenia po ostatnią warstwę. Efekt WOW gwarantowany.',
+    en: 'Precision at every stage — from surface protection to the final coat. WOW effect guaranteed.',
+    nl: 'Precyzja na każdym etapie — od zabezpieczenia po ostatnią warstwę. Efekt WOW gwarantowany.',
+    de: 'Präzision in jeder Phase — vom Schutz bis zur letzten Schicht. WOW-Effekt garantiert.',
+    fr: 'La précision à chaque étape — de la protection à la couche finale. Effet WOW garanti.',
+  },
+  
+  // Painting Steps
+  paint_step1_t: { pl: 'Zabezpieczenie powierzchni', en: 'Surface Protection', nl: 'Oppervlaktebescherming', de: 'Oberflächenschutz', fr: 'Protection des Surfaces' },
+  paint_step1_d: {
+    pl: 'Folia ochronna, taśma malarska, precyzyjne zabezpieczenie każdego centymetra powierzchni. Chronimy Twoje meble i podłogi.',
+    en: 'Protective foil, masking tape, precise protection of every inch. We protect your furniture and floors.',
+    nl: 'Folia ochronna, taśma malarska, precyzyjne zabezpieczenie każdego centymetra powierzchni. Chronimy Twoje meble i podłogi.',
+    de: 'Schutzfolie, Malerband, präziser Schutz jedes Zentimeters. Wir schützen Ihre Möbel und Böden.',
+    fr: 'Film protecteur, ruban de masquage, protection précise de chaque centimètre. Nous protégeons vos meubles et vos sols.',
+  },
+  paint_step2_t: { pl: 'Gruntowanie podłoża', en: 'Priming Surfaces', nl: 'Primer aanbrengen', de: 'Grundierung', fr: 'Application de l\'Apprêt' },
+  paint_step2_d: {
+    pl: 'Podkład, który gwarantuje idealną przyczepność i wyrównanie. Perfekcyjnie gładkie ściany bez kompromisów.',
+    en: 'Primer that guarantees ideal adhesion and leveling. Perfectly smooth walls without compromises.',
+    nl: 'Podkład, który gwarantuje idealną przyczepność i wyrównanie. Perfekcyjnie gładkie ściany bez kompromisów.',
+    de: 'Grundierung, die ideale Haftung und Verlauf garantiert. Perfekt glatte Wände ohne Kompromisse.',
+    fr: 'Couche de fond qui garantit une adhérence et un nivellement idéaux. Murs parfaitement lisses sans compromis.',
+  },
+  paint_step3_t: { pl: 'Szpachlowanie i gładzie', en: 'Plastering & Filling', nl: 'Plamuren & Gładź', de: 'Spachtelarbeiten & Glättung', fr: 'Enduisage & Ratissage' },
+  paint_step3_d: {
+    pl: 'Precyzyjna likwidacja ubytków, gładzie, przygotowanie podłoża do nieskazitelnej warstwy końcowej.',
+    en: 'Precise repair of damages, smooth finish, preparing the surface for a flawless top coat.',
+    nl: 'Precyzyjna likwidacja ubytków, gładzie, przygotowanie podłoża do nieskazitelnej warstwy końcowej.',
+    de: 'Präzise Beseitigung von Schäden, Glättung, Vorbereitung des Untergrunds für eine makellose Deckschicht.',
+    fr: 'Réparation précise des imperfections, lissage, préparation du support pour une couche de finition impeccable.',
+  },
+  paint_footer: {
+    pl: 'Ostre odcięcia, równomierne krycie, trwałe powłoki premium.',
+    en: 'Sharp edges, uniform coverage, durable premium coatings.',
+    nl: 'Strakke aflijning, gelijkmatige dekking, duurzame premiumcoatings.',
+    de: 'Scharfe Kanten, gleichmäßige Deckkraft, langlebige Premium-Beschichtungen.',
+    fr: 'Bords nets, couverture uniforme, revêtements de qualité supérieure durables.',
+  },
+
+  // Flooring Specialty
+  flooring_title: { pl: 'Montaż paneli podłogowych', en: 'Laminate & Wood Flooring', nl: 'Montage paneli podłogowych', de: 'Bodenverlegung', fr: 'Pose de parquet' },
+  flooring_desc: {
+    pl: 'Solidna podstawa Twojego wnętrza — dbamy o każdy detal, od wylewki po listwę.',
+    en: 'Solid foundation for your interior — we care for every detail, from screed to baseboard.',
+    nl: 'Solidna podstawa Twojego wnętrza — dbamy o każdy detal, od wylewki po listwę.',
+    de: 'Solide Basis für Ihr Interieur — wir achten auf jedes Detail, vom Estrich bis zur Leiste.',
+    fr: 'Une base solide pour votre intérieur — nous soignons chaque détail, de la chape à la plinthe.',
+  },
+  floor_step1_t: { pl: 'Przygotowanie podłoża', en: 'Subfloor Preparation', nl: 'Voorbereiding van de ondergrond', de: 'Untergrundvorbereitung', fr: 'Préparation du support' },
+  floor_step1_d: {
+    pl: 'Ocena stabilności, dokładne odkurzanie i niwelowanie nierówności. Idealnie czysta i prosta wylewka to fundament trwałej podłogi bez skrzypenia.',
+    en: 'Stability assessment, thorough vacuuming and leveling. Perfectly clean and flat screed is the foundation of a squeak-free durable floor.',
+    nl: 'Ocena stabilności, dokładne odkurzanie i niwelowanie nierówności. Idealnie czysta i prosta wylewka to fundament trwałej podłogi bez skrzypenia.',
+    de: 'Stabilitätsprüfung, gründliches Absaugen und Ausgleichen. Ein perfekt sauberer und ebener Estrich ist das Fundament für einen knarrfreien Boden.',
+    fr: 'Évaluation de la stabilité, aspiration et nivellement rigoureux. Une chape parfaitement propre et plane est le gage d’un sol durable sans grincement.',
+  },
+  floor_step2_t: { pl: 'Izolacja i aklimatyzacja', en: 'Insulation & Acclimatization', nl: 'Isolatie & Acclimatisering', de: 'Dämmung & Akklimatisierung', fr: 'Isolation & Acclimatation' },
+  floor_step2_d: {
+    pl: 'Właściwe leżakowanie materiału w pomieszczeniu oraz dobór dedykowanego podkładu. Zapewniamy ochronę przed wilgocią i maksymalne wyciszenie.',
+    en: 'Proper storage of the material in the room and selection of a dedicated underlay. We provide protection against moisture and maximum noise reduction.',
+    nl: 'Właściwe leżakowanie materiału w pomieszczeniu oraz dobór dedykowanego podkładu. Zapewniamy ochronę przed wilgocią i maksymalne wyciszenie.',
+    de: 'Fachgerechte Lagerung des Materials im Raum und Auswahl der passenden Unterlage. Wir bieten Feuchtigkeitsschutz und maximale Schalldämmung.',
+    fr: 'Stockage adéquat du matériel dans la pièce et choix d’une sous-couche adaptée. Nous assurons une protection contre l’humidité et une isolation phonique maximale.',
+  },
+  floor_step3_t: { pl: 'Precyzyjny montaż desek', en: 'Precision Board Installation', nl: 'Nauwkeurige plankinstallatie', de: 'Präzise Dielenverlegung', fr: 'Pose précise des lames' },
+  floor_step3_d: {
+    pl: 'Rozplanowanie układu względem światła i montaż z zachowaniem szczelin dylatacyjnych. Dbamy o idealne przesunięcie wzoru i czyste przejścia w progu.',
+    en: 'Layout planning relative to light source and installation with expansion gaps. We ensure perfect pattern offset and clean threshold transitions.',
+    nl: 'Rozplanowanie układu względem światła i montaż z zachowaniem szczelin dylatacyjnych. Dbamy o idealne przesunięcie wzoru i czyste przejścia w progu.',
+    de: 'Planung des Verlegebilds zum Lichteinfall und Verlegung mit Dehnungsfugen. Wir achten auf perfekten Versatz und saubere Übergänge an Schwellen.',
+    fr: 'Planification du calepinage par rapport à la lumière et pose avec joints de dilatation. Nous veillons à un décalage parfait des lames et des seuils impeccables.',
+  },
+  floor_footer: {
+    pl: 'Montaż listew przypodłogowych z precyzyjnym cięciem kątowym. Akcent na detale i estetyczne maskowanie styków.',
+    en: 'Baseboard installation with precision miter cuts. Accent on details and aesthetic masking of joints.',
+    nl: 'Plintmontage met nauwkeurige versteksneden. Aandacht voor details en esthetische voegafwerking.',
+    de: 'Sockelleistenmontage mit präzisen Gehrungsschnitten. Fokus auf Details und ästhetische Fugenkaschierung.',
+    fr: 'Pose de plinthes avec coupes d’onglet précises. Accent mis sur les détails et le masquage esthétique des joints.',
+  },
+
+  // More than painting (Kompleksowe usługi)
+  more_title: { pl: 'Więcej niż malowanie', en: 'More than painting', nl: 'Więcej niż malowanie', de: 'Mehr als Malerarbeiten', fr: 'Plus que de la peinture' },
+  more_subtitle: { pl: 'Kompleksowe usługi', en: 'Comprehensive services', nl: 'Kompleksowe usługi', de: 'Umfassende Leistungen', fr: 'Services Complets' },
+  
+  svc_premium_paint: { pl: 'Malowanie Premium', en: 'Premium Painting', nl: 'Malowanie Premium', de: 'Premium-Anstrich', fr: 'Peinture Premium' },
+  svc_premium_paint_d: {
+    pl: 'Wnętrza i fasady, używamy wyłącznie sprawdzonych, trwałych farb najwyższej klasy.',
+    en: 'Interiors and facades, we use exclusively proven, high-class and durable paints.',
+    nl: 'Binnen- en buitenschilderwerk, we gebruiken uitsluitend bewezen, duurzame verf van topklasse.',
+    de: 'Innen- und Außenbereich, wir verwenden ausschließlich bewährte, langlebige Premiumfarben.',
+    fr: 'Intérieurs et façades, nous utilisons uniquement des peintures éprouvées, durables et de haute qualité.',
+  },
+  svc_gk: { pl: 'Zabudowy G-K', en: 'Drywall construction', nl: 'Zabudowy G-K', de: 'Trockenbau', fr: 'Plaques de plâtre' },
+  svc_gk_d: {
+    pl: 'Sufity podwieszane, nowoczesne ścianki działowe, precyzyjne łączenia gotowe pod finisz.',
+    en: 'Suspended ceilings, modern partition walls, precise joints ready for finishing.',
+    nl: 'Verlaagde plafonds, moderne scheidingswanden, strakke voegen klaar voor afwerking.',
+    de: 'Abgehängte Decken, moderne Trennwände, präzise Fugen fertig zum Spachteln.',
+    fr: 'Faux plafonds, cloisons modernes, joints précis prêts pour la finition.',
+  },
+  svc_renovations_all: { pl: 'Kompleksowe Remonty', en: 'Full Renovation', nl: 'Totaalrenovatie', de: 'Komplettrenovierung', fr: 'Rénovation Totale' },
+  svc_renovations_all_d: {
+    pl: 'Generalne remonty mieszkań, domów i biur w regionie Leuven. Kompleksowy nadzór nad inwestycją.',
+    en: 'Full renovations of apartments, houses and offices in Leuven. Comprehensive project supervision.',
+    nl: 'Volledige renovatie van appartementen, huizen en kantoren in Leuven. Uitgebreid toezicht.',
+    de: 'Komplettrenovierung von Wohnungen, Häusern und Büros in Leuven. Umfassende Bauleitung.',
+    fr: 'Rénovation complète d’appartements, maisons et bureaux à Louvain. Supervision complète.',
+  },
+
+  // ─── THREE PROMISES (SUBSTITUTE FOR STATS) ───
+  promise_quality_t: { pl: 'Szybka realizacja', en: 'Fast execution', nl: 'Snelle realisatie', de: 'Schnelle Umsetzung', fr: 'Réalisation rapide' },
+  promise_quality_d: {
+    pl: 'Dzięki wszechstronnym umiejętnościom wykwalifikowanych fachowców remont przebiegnie w ekspresowym tempie!',
+    en: 'Thanks to the versatile skills of our qualified specialists, the renovation will run at an express pace!',
+    nl: 'Dankzij de veelzijdige vaardigheden van onze gekwalificeerde vakmensen zal de renovatie in een razendsnel tempo verlopen!',
+    de: 'Dank der vielseitigen Fähigkeiten unserer qualifizierten Fachkräfte wird die Renovierung im Express-Tempo durchgeführt!',
+    fr: 'Grâce aux compétences polyvalentes de nos professionnels qualifiés, la rénovation se déroulera à un rythme express !',
+  },
+  promise_clean_t: { pl: 'Kompleksowa, fachowa obsługa', en: 'Comprehensive, professional service', nl: 'Volledige, professionele service', de: 'Umfassender, professioneller Service', fr: 'Service complet et professionnel' },
+  promise_clean_d: {
+    pl: 'Świadczymy kompleksowe usługi remontowe wykonywane przez doświadczonych fachowców starannie i precyzyjnie.',
+    en: 'We provide comprehensive renovation services performed by experienced professionals with care and precision.',
+    nl: 'Wij leveren uitgebreide renovatiediensten die door ervaren vakmensen met uiterste zorg en precisie worden uitgevoerd.',
+    de: 'Wir bieten umfassende Renovierungsdienstleistungen, die von erfahrenen Fachkräften sorgfältig und präzise ausgeführt werden.',
+    fr: 'Nous fournissons des services complets de rénovation exécutés par des professionnels expérimentés avec soin et précision.',
+  },
+  promise_local_t: { pl: 'Niska cena', en: 'Affordable pricing', nl: 'Lage prijs', de: 'Günstiger Preis', fr: 'Prix compétitif' },
+  promise_local_d: {
+    pl: 'Doświadczona ekipa sprawi, że pracę, którą zlecisz nam, w krótkim czasie będzie i prezentowała się okazale!',
+    en: 'Our experienced crew will make the work you entrust to us look impressive in a short time!',
+    nl: 'Onze ervaren ploeg zorgt ervoor dat de werken die u ons toevertrouwt er in een mum van tijd schitterend uitzien!',
+    de: 'Unser erfahrenes Team sorgt dafür, dass die Ihnen anvertrauten Arbeiten in kürzester Zeit prachtvoll aussehen!',
+    fr: 'Notre équipe expérimentée veillera à ce que les travaux que vous nous confiez soient magnifiques en un rien de temps !',
+  },
+
+  // Additional Services (Usługi dodatkowe) from PDF
+  add_title: { pl: 'Usługi dodatkowe', en: 'Additional Services', nl: 'Usługi dodatkowe', de: 'Zusatzleistungen', fr: 'Services Additionnels' },
+  add_bathrooms: { pl: 'Łazienki', en: 'Bathrooms', nl: 'Łazienki', de: 'Badezimmer', fr: 'Salles de bain' },
+  add_bathrooms_d: { pl: 'Kafelkowanie, fugowanie, kompletne wykończenie.', en: 'Tiling, grouting, complete luxury finish.', nl: 'Betegeling, voegwerk, complete luxe afwerking.', de: 'Fliesenlegen, Verfugen, kompletter Innenausbau.', fr: 'Carrelage, jointoiement, finition de luxe complète.' },
+  add_geberit: { pl: 'Montaże Geberit', en: 'Geberit Installations', nl: 'Montaże Geberit', de: 'Geberit-Montage', fr: 'Installations Geberit' },
+  add_geberit_d: { pl: 'Instalacja stelaży podtynkowych i nowoczesnych systemów WC.', en: 'Installation of concealed frames and modern toilet systems.', nl: 'Installatie van inbouwreservoirs en moderne toiletsystemen.', de: 'Installation von Vorwandelementen und modernen WCs.', fr: 'Installation de bâtis-supports et de systèmes WC modernes.' },
+  add_furniture: { pl: 'Renowacja mebli', en: 'Furniture restoration', nl: 'Renowacja mebli', de: 'Möbelrestaurierung', fr: 'Restauration de meubles' },
+  add_furniture_d: { pl: 'Odświeżanie, szlifowanie i lakierowanie drewnianych mebli.', en: 'Refreshing, sanding and varnishing of wooden furniture.', nl: 'Opfrissen, schuren en lakken van houten meubelen.', de: 'Auffrischen, Schleifen und Lackieren von Holzmöbeln.', fr: 'Restauration, ponçage et vernissage de meubles en bois.' },
+  add_doors: { pl: 'Renowacja drzwi', en: 'Door restoration', nl: 'Renowacja drzwi', de: 'Türrestaurierung', fr: 'Restauration de portes' },
+  add_doors_d: { pl: 'Szlifowanie, szpachlowanie i malowanie drzwi wewnętrznych.', en: 'Sanding, filling and painting of interior doors.', nl: 'Schuren, plamuren en schilderen van binnendeuren.', de: 'Schleifen, Spachteln und Lackieren von Innentüren.', fr: 'Ponçage, masticage et peinture de portes intérieures.' },
+  add_wallpaper: { pl: 'Tapetowanie', en: 'Wallpapering', nl: 'Tapetowanie', de: 'Tapezieren', fr: 'Pose de papier peint' },
+  add_wallpaper_d: { pl: 'Profesjonalne klejenie tapet, równe cięcia i pasowanie wzoru.', en: 'Professional wallpaper hanging, straight cuts and pattern matching.', nl: 'Professioneel behangen, strakke sneden en patroonafstemming.', de: 'Professionelles Tapezieren, präzise Schnitte und Rapportanpassung.', fr: 'Pose professionnelle de papier peint, coupes nettes et raccords.' },
+  add_repairs: { pl: 'Drobne naprawy', en: 'Minor repairs', nl: 'Drobne naprawy', de: 'Kleinreparaturen', fr: 'Petites réparations' },
+  add_repairs_d: { pl: 'Silikonowanie, szpachlowanie pęknięć, drobne poprawki domowe.', en: 'Siliconing, filling of cracks, small home improvements.', nl: 'Siliconeren, vullen van scheuren, kleine herstellingen.', de: 'Silikonieren, Risse verspachteln, kleine Schönheitsreparaturen.', fr: 'Silicone, rebouchage de fissures, petites retouches.' },
+
+  // ─── PORTFOLIO ───
+  portfolio_sec_tag: { pl: 'Nasze Portfolio', en: 'Our Portfolio', nl: 'Ons Portfolio', de: 'Unser Portfolio', fr: 'Notre Portfolio' },
+  portfolio_sec_title: { pl: 'Metamorfozy wnętrz', en: 'Interior Metamorphoses', nl: 'Metamorfozy wnętrz', de: 'Metamorphosen', fr: 'Métamorphoses d\'intérieurs' },
+  portfolio_sec_desc: {
+    pl: 'Zdjęcia z naszych rzeczywistych realizacji w Belgii. Kliknij w projekt, aby zobaczyć galerię zdjęć.',
+    en: 'Real photos of our finished projects in Belgium. Click a project to view the photo gallery.',
+    nl: 'Echte foto\'s van onze afgewerkte projecten in België. Klik op een project om de fotogalerij te bekijken.',
+    de: 'Echte Fotos unserer abgeschlossenen Projekte in Belgien. Klicken Sie auf ein Projekt, um die Galerie zu öffnen.',
+    fr: 'Photos réelles de nos chantiers réalisés en Belgique. Cliquez sur un projekt pour voir la galerie photo.',
+  },
+
+  p_item1_c: { pl: 'RENOWACJA SCHODÓW', en: 'STAIRS RESTORATION', nl: 'TRAPRENOVATIE', de: 'TREPPENRENOVIERUNG', fr: "RÉNOVATION D'ESCALIER" },
+  p_item1_t: { pl: 'Odnowienie schodów', en: 'Stairs Restoration', nl: 'Traprenovatie', de: 'Treppenrenovierung', fr: "Rénovation d'escaliers" },
+  p_item2_c: { pl: 'MONTAŻ PODŁÓG', en: 'FLOORS INSTALLATION', nl: 'VLOERBEKLEDING', de: 'BODENVERLEGUNG', fr: 'POSE DE PARQUET' },
+  p_item2_t: { pl: 'Układanie Paneli', en: 'Floor Panel Laying', nl: 'Laminaat leggen', de: 'Laminatverlegung', fr: 'Pose de parquet stratifié' },
+  p_item3_c: { pl: 'MONTAŻ PODŁÓG', en: 'FLOORS INSTALLATION', nl: 'VLOERBEKLEDING', de: 'BODENVERLEGUNG', fr: 'POSE DE PARQUET' },
+  p_item3_t: { pl: 'Układanie Paneli', en: 'Floor Panel Laying', nl: 'Laminaat leggen', de: 'Laminatverlegung', fr: 'Pose de parquet stratifié' },
+  p_item4_c: { pl: 'PŁYTKI ZEWNĘTRZNE', en: 'OUTDOOR TILING', nl: 'BUITENTEGELS', de: 'AUSSENFLIESEN', fr: 'CARRELAGE EXTÉRIEUR' },
+  p_item4_t: { pl: 'Płytki na zewnątrz', en: 'Outdoor Tiling', nl: 'Buitentegels leggen', de: 'Außenfliesen verlegen', fr: 'Pose de carrelage extérieur' },
+  p_item5_c: { pl: 'SUFITY G-K & MALOWANIE', en: 'DRYWALL & PAINTING', nl: 'GYPROC & SCHILDERWERK', de: 'TROCKENBAU & ANSTRICH', fr: 'GYPROC & PEINTURE' },
+  p_item5_t: { pl: 'Sufit na schodach Zabudowa + malowanie', en: 'Stair Ceiling Drywall & Painting', nl: 'Plafondafwerking trapgat & schilderwerk', de: 'Treppendecke Trockenbau & Anstrich', fr: "Plafond d'escalier Gyproc & peinture" },
+  p_item6_c: { pl: 'PARKIET I DREWNO', en: 'PARQUET FLOORING', nl: 'PARKETVLOEREN', de: 'PARKETT VERLEGEN', fr: 'POSE DE PARQUET CHÊNE' },
+  p_item6_t: { pl: 'Parkiet', en: 'Parquet Flooring', nl: 'Parket leggen', de: 'Parkettverlegung', fr: 'Pose de parquet' },
+  pics_count_4: { pl: '4 zdjęcia', en: '4 photos', nl: '4 foto\'s', de: '4 Fotos', fr: '4 photos' },
+  pics_count_12: { pl: '12 zdjęć', en: '12 photos', nl: '12 foto\'s', de: '12 Fotos', fr: '12 photos' },
+
+  // ─── TESTIMONIALS (ZADOWOLENI KLIENCI) ───
+  testimonials_tag: { pl: 'Zadowoleni Klienci', en: 'Satisfied Clients', nl: 'Zadowoleni Klienci', de: 'Zufriedene Kunden', fr: 'Clients Satisfaits' },
+  testimonials_title: { pl: 'Co mówią o nas inni?', en: 'What do others say about us?', nl: 'Co mówią o nas inni?', de: 'Was andere über uns sagen?', fr: 'Que dit-on de nous ?' },
+  
+  // Real testimonials from PDF
+  review1: {
+    pl: 'Profesjonalna ekipa, czysto i terminowo. Salon wygląda fantastycznie, farba idealnie nałożona!',
+    en: 'Professional team, clean and on time. Living room looks fantastic, paint is perfectly applied!',
+    nl: 'Profesjonalna ekipa, czysto i terminowo. Salon wygląda fantastycznie, farba idealnie nałożona!',
+    de: 'Professionelles Team, sauber und pünktlich. Das Wohnzimmer sieht fantastisch aus, Farbe perfekt aufgetragen!',
+    fr: 'Équipe professionnelle, travail propre et dans les délais. Le salon est magnifique, la peinture est appliquée à la perfection !',
+  },
+  review2: {
+    pl: 'Świetna robota z zabudową G-K w kuchni. Wszystko prosto, bez pęknięć. Polecam w Leuven.',
+    en: 'Great job with the drywall construction in the kitchen. Everything is perfectly straight, no cracks. Recommended in Leuven.',
+    nl: 'Świetna robota z zabudową G-K w kuchni. Wszystko prosto, bez pęknięć. Polecam w Leuven.',
+    de: 'Tolle Arbeit mit dem Trockenbau in der Küche. Alles gerade, keine Risse. Sehr zu empfehlen in Leuven.',
+    fr: 'Superbe travail sur les plaques de plâtre dans la cuisine. Tout est parfaitement droit, pas une fissure. Recommandé à Louvain.',
+  },
+  review3: {
+    pl: 'Panele położone idealnie, zero reklamacji. Szybka komunikacja i czysta praca.',
+    en: 'Floor panels laid perfectly, zero complaints. Fast communication and very clean work.',
+    nl: 'Panele położone idealnie, zero reklamacji. Szybka komunikacja i czysta praca.',
+    de: 'Bodenplatten perfekt verlegt, keinerlei Beschwerden. Schnelle Kommunikation und saubere Arbeit.',
+    fr: 'Revêtement de sol posé à la perfection, aucun reproche. Communication rapide et chantier très propre.',
+  },
+  // ─── PORTFOLIO EXTRA FILTERS ───
+  filter_all: { pl: 'Wszystkie', en: 'All', nl: 'Alle', de: 'Alle', fr: 'Tous' },
+  svc_painting: { pl: 'Malowanie', en: 'Painting', nl: 'Schilderwerken', de: 'Malerarbeiten', fr: 'Peinture' },
+
+  // ─── CONTACT ───
+  contact_tag: { pl: 'Szybki Kontakt', en: 'Quick Contact', nl: 'Szybki Kontakt', de: 'Schnellkontakt', fr: 'Contact Rapide' },
+  contact_title: { pl: 'Zacznijmy współpracę', en: 'Let\'s start working together', nl: 'Zacznijmy współpracę', de: 'Lass uns zusammenarbeiten', fr: 'Travaillons ensemble' },
+  contact_desc: {
+    pl: 'Opowiedz nam o swoim projekcie, chętnie doradzimy i sporządzimy bezpłatną wycenę.',
+    en: 'Tell us about your project, we will gladly advise you and prepare a free quotation.',
+    nl: 'Vertel ons over uw project, we adviseren u graag en maken een gratis offerte.',
+    de: 'Erzählen Sie uns von Ihrem Projekt, wir beraten Sie gerne und erstellen ein kostenloses Angebot.',
+    fr: 'Parlez-nous de votre projet, nous nous ferons un plaisir de vous conseiller et de préparer un devis gratuit.',
+  },
+  form_name: { pl: 'Imię i Nazwisko', en: 'Full Name', nl: 'Naam', de: 'Name', fr: 'Nom Complet' },
+  form_name_ph: { pl: 'np. Jan Kowalski', en: 'e.g. John Doe', nl: 'bijv. Jan Janssens', de: 'z.B. Max Mustermann', fr: 'ex. Jean Dupont' },
+  form_email: { pl: 'E-mail', en: 'E-mail', nl: 'E-mail', de: 'E-Mail', fr: 'E-mail' },
+  form_phone: { pl: 'Telefon', en: 'Phone number', nl: 'Telefoon', de: 'Telefon', fr: 'Téléphone' },
+  form_message: { pl: 'Wiadomość', en: 'Message', nl: 'Bericht', de: 'Nachricht', fr: 'Message' },
+  form_message_ph: { pl: 'np. Szukam ekipy do malowania salonu w Leuven i ułożenia paneli...', en: 'e.g. I am looking for a team to paint a living room in Leuven and install floors...', nl: 'bijv. Ik zoek een team om een woonkamer in Leuven te schilderen...', de: 'z.B. Ich suche ein Team zum Streichen des Wohnzimmers in Leuven...', fr: 'ex. Je cherche une équipe pour peindre un salon à Louvain...' },
+  form_send: { pl: 'Wyślij Wiadomość', en: 'Send Message', nl: 'Verstuur Bericht', de: 'Nachricht Senden', fr: 'Envoyer' },
+  info_phone: { pl: 'Telefon / GSM', en: 'Call Us', nl: 'Telefoon', de: 'Telefon', fr: 'Téléphone' },
+  info_location: { pl: 'Obszar Działania', en: 'Service Area', nl: 'Werkgebied', de: 'Einsatzgebiet', fr: 'Zone d\'intervention' },
+  info_location_v: { pl: 'Leuven · Heverlee · Herent i okolice', en: 'Leuven · Heverlee · Herent & surroundings', nl: 'Leuven · Heverlee · Herent & omgeving', de: 'Leuven · Heverlee · Herent & Umgebung', fr: 'Louvain · Heverlee · Herent & environs' },
+  info_hours: { pl: 'Dostępność', en: 'Availability', nl: 'Beschikbaarheid', de: 'Erreichbarkeit', fr: 'Disponibilité' },
+  info_hours_v: { pl: 'Pon - Pt: 08:00 - 18:00', en: 'Mon - Fri: 08:00 - 18:00', nl: 'Ma - Vr: 08:00 - 18:00', de: 'Mo - Fr: 08:00 - 18:00', fr: 'Lun - Ven: 08:00 - 18:00' },
+  info_whatsapp: { pl: 'Napisz na WhatsApp', en: 'Message on WhatsApp', nl: 'Napisz na WhatsApp', de: 'WhatsApp schreiben', fr: 'Écrire sur WhatsApp' },
+  follow_us: { pl: 'Śledź nas', en: 'Follow us', nl: 'Volg ons', de: 'Folge uns', fr: 'Suivez-nous' },
+
+  // ─── FOOTER ───
+  footer_desc: {
+    pl: 'Wall Done Betrouwbaar & Ervaren — Twoja zaufana ekipa remontowa w Belgii.',
+    en: 'Wall Done Betrouwbaar & Ervaren — Your trusted renovation team in Belgium.',
+    nl: 'Wall Done Betrouwbaar & Ervaren — Uw vertrouwde renovatieteam in België.',
+    de: 'Wall Done Betrouwbaar & Ervaren — Ihr vertrauenswürdiges Renovierungsteam in Belgien.',
+    fr: 'Wall Done Betrouwbaar & Ervaren — Votre équipe de rénovation de confiance en Belgique.',
+  },
+  footer_nav: { pl: 'Nawigacja', en: 'Navigation', nl: 'Navigatie', de: 'Navigation', fr: 'Navigation' },
+  footer_services: { pl: 'Usługi', en: 'Services', nl: 'Diensten', de: 'Leistungen', fr: 'Services' },
+  footer_rights: { pl: 'Wszelkie prawa zastrzeżone.', en: 'All rights reserved.', nl: 'Alle rechten voorbehouden.', de: 'Alle Rechte vorbehalten.', fr: 'Tous droits réservés.' },
+  footer_privacy: { pl: 'Polityka Prywatności', en: 'Privacy Policy', nl: 'Privacybeleid', de: 'Datenschutz', fr: 'Politique de Confidentialité' },
+  footer_terms: { pl: 'Regulamin', en: 'Terms & Conditions', nl: 'Algemene Voorwaarden', de: 'AGB', fr: 'Conditions Générales' },
+};

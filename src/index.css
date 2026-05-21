@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════
+   ToppiWall — Design System
+   ═══════════════════════════════════════════ */
+
+@theme {
+  --color-toppi-red: #C82333;
+  --color-toppi-red-dark: #A01B29;
+  --color-toppi-red-light: #F5D0D3;
+  --color-toppi-red-glow: rgba(200, 35, 51, 0.15);
+
+  --color-toppi-white: #FAFAFA;
+  --color-toppi-cream: #F7F5F2;
+  --color-toppi-light: #EDEBE8;
+  --color-toppi-warm: #F0EDE9;
+  --color-toppi-gray-100: #E8E6E3;
+  --color-toppi-gray-200: #D1CFC9;
+  --color-toppi-gray-300: #A8A29E;
+  --color-toppi-gray-400: #78716C;
+  --color-toppi-gray-500: #57534E;
+  --color-toppi-gray-600: #44403C;
+  --color-toppi-gray-700: #292524;
+  --color-toppi-dark: #1C1917;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+/* ═══ Base Styles ═══ */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-toppi-white);
+  color: var(--color-toppi-gray-700);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-toppi-red);
+  color: white;
+}
+
+/* ═══ Custom Scrollbar ═══ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-toppi-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-toppi-red);
+  border-radius: 3px;
+}
+
+/* ═══ Red Line Spine Animation ═══ */
+.spine-line {
+  position: fixed;
+  right: 48px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-toppi-gray-100);
+  z-index: 40;
+  pointer-events: none;
+}
+
+.spine-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-toppi-red);
+  transform-origin: top;
+  border-radius: 2px;
+}
+
+.spine-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--color-toppi-red);
+  box-shadow: 0 0 20px var(--color-toppi-red-glow), 0 0 40px var(--color-toppi-red-glow);
+  transition: all 0.3s ease;
+}
+
+/* ═══ Section Reveal Animation ═══ */
+.reveal-section {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ═══ Stagger Children ═══ */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stagger-children.is-visible > *:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
+.stagger-children.is-visible > *:nth-child(2) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+.stagger-children.is-visible > *:nth-child(3) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+.stagger-children.is-visible > *:nth-child(4) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+.stagger-children.is-visible > *:nth-child(5) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+.stagger-children.is-visible > *:nth-child(6) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
+
+/* ═══ Gradient Text ═══ */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-toppi-gray-700) 0%, var(--color-toppi-red) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ═══ Hover Card Effect ═══ */
+.hover-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08), 0 12px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* ═══ Image Reveal ═══ */
+.image-reveal {
+  position: relative;
+  overflow: hidden;
+}
+.image-reveal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-toppi-red);
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.image-reveal.is-visible::after {
+  transform: scaleX(0);
+}
+
+/* ═══ Hero line draw ═══ */
+@keyframes drawLine {
+  from { stroke-dashoffset: 600; }
+  to { stroke-dashoffset: 0; }
+}
+.line-draw {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawLine 2s cubic-bezier(0.65, 0, 0.35, 1) 0.5s forwards;
+}
+
+/* ═══ Pulse for CTA ═══ */
+@keyframes pulse-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200, 35, 51, 0.4); }
+  50% { box-shadow: 0 0 0 16px rgba(200, 35, 51, 0); }
+}
+.pulse-glow {
+  animation: pulse-red 2.5s infinite;
+}
+
+/* ═══ Number Counter ═══ */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══ Floating label ═══ */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ═══ Mobile Adjustments ═══ */
+@media (max-width: 1024px) {
+  .spine-line {
+    display: none;
+  }
+}
